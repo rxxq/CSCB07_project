@@ -1,0 +1,74 @@
+==File Formats==
+
+    All directories mentioned below are relative to the root of our
+    Java project
+
+    === User info ===
+    User info will be stored in text files in the directory named userinfo.
+    Each user (both clients and admins) will have
+    a file named after their email address. Since the '@' character is
+	usually not allowed in filenames, we will replace it with an underscore
+	in the filename Eg: "xiuqi.xia_mail.utoronto.ca.txt"
+        Line 1: the password of the user
+        Line 2: either "client" or "admin" depending on which type of user
+            this is. 
+    If user is an admin, there only be 2 lines
+    Client personal and billing info starts on line 3
+        All on one line:
+        LastName,FirstNames,Email,Address,CreditCardNumber,ExpiryDate
+    Itineraries a Client has booked starts on line 4
+        Each line is an itinerary.
+        An itinerary line consists of flight names separated by commas.
+		A flight name is a concatenation of airline and flightnumber
+		eg: AC2343, AC3402, US2039
+        The flights are in order of departure time.
+        The intinerary lines are also in order of departure time
+        (of the first flight in the itinerary)
+
+    === Flight info ===
+    Flight records are stored in a text file named "flights.txt".
+        Each line contains information for one flight:
+        Number,DepartureDateTime,ArrivalDateTime,Airline,Origin,Destination,Price
+		The Airline + Flight Number combination must be unique
+		eg: you can have 2 flights named AC 123 and US 123
+			but not 2 flights named AC 123 and AC 123
+
+== Data Structure ==
+    === Flights in FlightDatabase ===
+    Flights will be stored in an ArrayList<Flight> in FlightDatabase
+    
+    === FlightDatabase in System ===
+    The system stores an instance of FlightDatabase containing all the
+    flight data
+
+    === Flights in itineraries ===
+    Flights are stored as ArrayList<Flight> in an itinerary.
+    The elements of this ArrayList are just references to the flights
+    in System, they are not copied over.
+
+    === Itineraries in SearchResults ===
+    Itineraries will be stored in SearchResults as a linked list
+    to facilitate sorting.
+    
+    === Itineraries in Client ===
+    Itineraries in Client will be stored in a linked list, sorted
+    by departure time (of the first flight in the itineraries).
+    Each newly booked itinerary will be inserted into the list
+    in the correct place to maintain the sorted order.
+    
+    === Personal, billing info ===
+    Stored as variables in the PersonInfo and BillingInfo classes.
+    Each Client contains an instance of PersonalInfo and an instance
+    of BillingInfo.
+
+    === SearchResults ===
+    A Client stores the most recent 5 SearchResults in an array[5]
+    of SearchResults
+    
+    === Client in Admin ===
+    When an Admin is editing Client info, it will store one or more instance
+    of the Client/s it is currently editing in an ArrayList<client>.
+    
+    === User in System ===
+    The System stores one instance of User (the logged in User)
+

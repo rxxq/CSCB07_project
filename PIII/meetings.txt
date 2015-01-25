@@ -1,0 +1,90 @@
+Meeting Nov 11, 2014 Trevor, Brandon, Rex
+Stuff to improve/fix in PII
+- Fully test Driver methods to make sure they work
+- Add ability to save files
+- Add ability to book flights for a client (also save to file)
+- Change Itinerary and Flight to use Calendar
+- Consistently use Itinerary instead of ArrayList<ArrayList<Flight>>
+- Add login stuff (separate packaged from backend)
+- Client and Admin
+
+We don't know anything about Android yet
+Will meet again tomorrow (Wednesday) at 5pm
+
+----------------------------------------------
+
+Wednesday Nov 13 Daniel, Brandon, Rex
+TODO: make an Android project and copy our backend package into it
+Made a plan for how our gui will work (see GUI_screens directory)
+Will meet again tommorrow at some point in the afternoon
+
+-------------------------------------------------
+
+Thursday Nov 14 Daniel, Brandon, Rex
+
+Brandon tested sortByTime in phase II, thought it wasn't working but
+turns out it does work properly.
+
+Daniel brought up issue: The Android version we are supposed to use
+(Jellybean) is incompatible with Java 1.7
+- Brandon and Daniel figured out we had not installed all android OS versions.
+-Should be fine now. We plan to play around with it on friday.
+
+Rex: Will start working on adding additional required features to
+the Driver in our backend (Phase II). Driver will be the only point of
+access for the frontend, so as long as Driver works consistently we're ok.
+
+--------------------------------------------
+Tuesday Nov 18, Brandon, Rex
+
+Rex: backend stuff has been added to the android project. Point of access
+for the backend is the BackendControlPanel class. 
+Currently, we can add a new user and log in as that user.
+No file-loading/saving for now
+
+Brandon: try to hook up backend to android so that a user can register.
+
+--------------------------------
+Friday Nov 21: Rex, Brandon
+
+As of the interview yesterday, our app starts on the login screen. We can 
+switch to the registration screen to add new users, go back to the login
+screen, and if the email/password is correct we can go to the main menu.
+
+Issues: The hidden directories and auto-generated stuff (bin and gen) are
+all in the repo, so we are having issues with our settings getting
+commited and pushed to other people. Svn rm was tried but it has a side
+effect of deleting files on other people's working copies when they update.
+We will keep this files in the repo for now since it's hard to coordinate
+backing up, svn rm'ing, and restoring the hidden files properly
+over the internet. When we next meet we will do that stuff together.
+
+Rex's goals for the next few days: 
+- [done]convert the BackendControlPanel to follow the singleton design pattern
+- [done]Androidify the file-reading features
+- [done]Add file-writing features
+
+----------------------------------
+Progress report Tuesday Nov 25
+
+Rex:
+	A) Converted BackendControlPanel and the Databases (actually managers) to
+	be singletons. If you need to access backend methods you have to do it like
+	this:
+		BackendControlPanel.getInstance(null).method()
+	The null parameter in getInstance is supposed to be the application
+	context. It's only needed for the first call to getInstance. The first call
+	to getInstance occurs in MainActivity, and I've already added the code for 
+	that, so you can just pass in null in the rest of the code.
+	B) File read/write now works in Android. Right now, the backend
+	automatically reads in the required data as csv files upon startup. It also
+	saves all the data after a new user is registered. We probably need to make
+	it so that it saves whenever the app suspends/exits.
+	
+	TODO:
+	- Add methods for user to upload client info and flights
+	- Figure out how to make sure the data is saved when the app suspends/exits
+	- Rename all the "databases" to be managers instead
+	- [done but not tested] Add the ability to book flights (make a bookings manager)
+	- [done]Add methods in BackendControlPanel to expose search functionality to
+		the frontend. (Trevor can you do this part?)

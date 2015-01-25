@@ -1,0 +1,131 @@
+October 28: Planning meeting
+Present: Daniel, Trevor, Brandon, Rex
+    - Rex will be out of town Thursday Oct 30 to Monday Nov 3, but he can
+        still code while away.
+    - Trevor will be out of commission starting Thursday Nov 6
+
+    - We will be using Brandon and Rex's version of the CRC model
+    - For data storage in files, we will be having each user in separate
+        file, and each flight in a separate file. (see our data.txt)
+        - slight change: instead of having stuff in separate lines, we
+            will keep everything in one line separated by commas.
+
+	Team Expectations:
+	=============================
+	Methods of Communication:
+	-Facebook (has a great cross platform IM app that will allow us to reach 
+		each other at all times.)
+	-Google Hangouts (great for online meetings)
+
+	Communication Response Times:
+	-The respond time should be within 1-2 hours via facebook.
+
+	Meeting Attendance:
+	-Mandatory|Thursday 11-1
+	-Optional|(as needed)
+
+	Running Meetings:
+	-The Thursday meeting will take place face-to-face in the Linux lab.
+	-The Optional meeting will take place on Google hangouts.
+	-
+
+	Meeting Prep.:
+	-All members of the group will be prepared to present and discuss all
+		assigned work.
+	-Members should be prepared to be given constructive critisism too.
+
+	Version Control:
+	-Members should only commit content that they have been assigned.
+	-Log messages should clearly state what has been added/updated.
+
+	Division of Work:
+	-Work will be divided evenly as a group (democratically).
+
+	Submitting:
+	-All work will be submitted 24 hours before the deadline (with a 2 hr
+		grace period).
+
+	Contingency Planning:
+	-If a group member were to drop out, their work is to be divided evenly 	between the remaining members.
+	-If a group member is to miss 2 meetings, they will be given an ultimatum. 
+		If they miss another, we will seek guidance from an instructor.
+	-If a group member commits an academic offence, it will be reported 
+		immediatly to an instructor.
+
+=============================================
+
+October 30th, 2014
+Meeting 2:
+
+	- Need to meet again soon. Weekend via Google Hangouts.
+
+	Phase II division of work:
+	(By Sunday, have a chunk of work done.)
+
+	--Rex will write the user class.
+
+	--Brandon will do personal/billing info
+
+	--Trevor will do flights and driver class.
+
+===============================================
+
+November 04th, 2014
+Meeting 3 (Planning meeting)
+
+Recap on current state of project
+Rex:
+- Wrote a loginUser method in System, which processes the email and user type
+	and logs in a user
+- Made a Saveable interface for classes that need to load/save data from file
+- Still writing the file-reading/writing parts of User
+TODO: Finish all the file-reading/writing parts of User/Clien/Admin 
+		and also FlightDB
+
+Brandon:
+- Wrote PersonalInfo and BillingInfo
+TODO:
+- Merge PersonalInfo and BillingInfo into ClientInfo
+- do get/set ClientInfo
+- Book/get bookings
+- Create searches and store the most recent 5
+
+Daniel:
+- Wrote Search class
+
+Trevor:
+- Flights and Driver done
+TODO:
+- Make Itinerary
+- Getter in Flights:
+	- Airline + flight number concatenation
+	- Duration (diff of Arrival and departure time)
+	- Any other useful info
+	
+Next meetings (hackathons): 
+- Later today at 3pm
+- Wednesday at 5pm
+
+=============
+Progress checklist as of Nov 6 12:30 pm
+
+public static void uploadClientInfo(String path)
+FINISHED (needs testing)
+
+public static void uploadFlightInfo(String path)
+FINISHED (needs testing)
+
+public static String getClient(String email)
+FINISHED (needs testing)
+
+public static String getFlights(String date, String origin, String destination)
+FINISHED (needs testing)
+
+public static String getItineraries(String date, String origin, String destination)
+ALMOST DONE (search done, need to make corresponding method in Driver)
+
+public static String getItinerariesSortedByCost(String date, String origin, String destination)
+NOT STARTED YET (but should be easy since already have search)
+
+public static String getItinerariesSortedByTime(String date, String origin, String destination)
+NOT STARTED YET (but should be easy since already have search)

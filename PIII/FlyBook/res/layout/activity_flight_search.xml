@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.group_0471.flybook.FlightSearch" >
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/timePicker1"
+        android:layout_below="@+id/textView2"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/flight_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:ems="10"
+        android:hint="@string/origin" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignTop="@+id/radioButton1"
+        android:text="@string/tv_od"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#3C577F" />
+
+    <EditText
+        android:id="@+id/flight_dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/flight_origin"
+        android:layout_below="@+id/flight_origin"
+        android:ems="10"
+        android:hint="Destination" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/flight_dest"
+        android:layout_below="@+id/flight_dest"
+        android:text="@string/tv_dd"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#3C577F" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/search"
+        android:onClick="searchFlights" 
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_marginBottom="18dp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timePicker"
+        android:layout_centerVertical="true"
+        android:calendarViewShown="false" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+    <!--  if your looking @ this thinking nothing had been done, please look @ AdminMenu.java
+    as all the functionality of Spinner is done in there! - Daniel  -->
+
+    <Spinner
+        android:id="@+id/adminMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regMenu"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/regMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adminMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher" />
+
+
+
+</RelativeLayout>

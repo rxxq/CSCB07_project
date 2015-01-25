@@ -1,0 +1,41 @@
+Java Automatic Marker 0.1.0
+
+********************************************************************************
+*                          Tests results for DriverTest                        *
+********************************************************************************
+Test case for the getItineraries(String date, String origin, String 
+destination) method failed because of a NumberFormatException.
+    Details:
+        For input string: "0-1"
+
+Test case for the getItineraries(String date, String origin, String 
+destination) method failed because of a NumberFormatException.
+    Details:
+        For input string: "0-1"
+
+Test case for the getItinerariesSortedByTime(String date, String origin, String 
+destination) method failed because of an AssertionError.
+    Why do I have an AssertionError?
+        Your function/method returned the wrong value or had an unexpected 
+        side-effect. For example, it may have modified a value it should not 
+        have.
+    Details:
+        the itineraries returned by getItinerariesSortedByTime(String, String, 
+        String) should be in non-decreasing order of time.
+
+Test case for the getFlights(String date, String origin, String destination) 
+method failed because of an AssertionError.
+    Why do I have an AssertionError?
+        Your function/method returned the wrong value or had an unexpected 
+        side-effect. For example, it may have modified a value it should not 
+        have.
+    Details:
+        Unexpected (incorrect or incorrectly formatted) flights or string 
+        output was returned.
+
+
+********************************************************************************
+*                        SUMMARY @ 2014/12/22 21:35:42                         *
+********************************************************************************
+    Tests passed: 9
+    Tests run: 13

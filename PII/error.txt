@@ -1,0 +1,6 @@
+./backend/Search.java:147: warning: [unchecked] unchecked cast
+                result.add((ArrayList<Flight>)itin.clone());
+                                                        ^
+  required: ArrayList<Flight>
+  found:    Object
+1 warning

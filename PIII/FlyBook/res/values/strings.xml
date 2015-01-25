@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlyBook</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register_user">RegisterUser</string>
+    <string name="main_login_button">Login</string>
+    <string name="logout">Logout</string>
+    <string name="main_register_button">Register</string>
+    <string name="main_plz_login">Please Login Below</string>
+    <string name="pw_hint">Password</string>
+    <string name="book">BOOK</string>
+    <string name="userName_hint">UserName (E-MAIL)</string>
+    <string name="register_diaologue">Please fill in the fields below</string>
+    <string name="newUserName_hint">Desired User Name (E-MAIL)</string>
+    <string name="f_name_hint">First Name</string>
+    <string name="l_name_hint">Last Name</string>
+    <string name="address_hint">Address</string>
+    <string name="submit_button">Submit</string>
+    <string name="title_activity_client_menu">ClientMenu</string>
+    <string name="search_itineraries">Search Itineraries</string>
+    <string name="search_flights">Search Flights</string>
+    <string name="view_recent_searches">View Recent Searches</string>
+    <string name="tv_od">Origin + Destination</string>
+    <string name="tv_st">Sort Type</string>
+    <string name="admin_bookhint">enter user to book for</string>
+    <string name="tv_time">Dept. Time</string>
+    <string name="sbt">Sort By Cost</string>
+    <string name="sbd">Sort By Time</string>
+    <string name="title_activity_edit_client_info__client">Edit Info</string>
+    <string name="origin">Origin</string>
+    <string name="tv_dd">Departure Date + Time</string>
+    <string name="view_edit_info">ï¿¼View/Edit Info</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="cc_hint">num</string>
+    <string name="cc_exp_hint">Exp Date</string>
+    <string name="title_activity_admin_menu">SYSTEM: ADMIN</string>
+    <string name="title_activity_view_itineraries">ViewItineraries</string>
+    <string name="view_booked_itins">View Booked Itineraries</string>
+    <string name="acc_settings">Account Settings</string>
+    <string name="opt_themes">App. Themes</string>
+    <string name="cart">Shopping Cart</string>
+    <string name="settings">App. Settings</string>
+    <string name="submit">Submit</string>
+    <string name="csvHint">Enter Path of CSV File</string>
+    <string name="up_flight">Upload Flights</string>
+    <string name="up_client">Upload Clients</string>
+    <string name="search">Search</string>
+    <string name="title_activity_flight_search">Search</string>
+
+    <string-array name="admin_spinner_1">
+        <item> Admin Options </item>
+        <item> View/Edit Client Info. </item>
+        <item> Create/Edit Admin Accounts </item>
+        <item> Upload CSV File </item>
+    </string-array>
+    <string-array name="admin_spinner_2">
+        <item> Regular Options </item>
+        <item> Search Avail. Itineraries </item>
+        <item> Search Flight Manifest</item>
+        <item> Edit Billing Info </item>
+    </string-array>
+    <string-array name="search_itineraries_spinner">
+        <item>Search Itineraries</item>
+        <item>By Total Travel Time</item>
+        <item>By Total Cost</item>
+    </string-array>
+
+    <string name="title_flight_list">flights</string>
+    <string name="title_flight_detail">flight Detail</string>
+    <string name="title_activity_shopping_cart">ShoppingCartActivity</string>
+    <string name="title_clientinfo_list">ClientInfo</string>
+    <string name="title_clientinfo_detail">ClientInfo Detail</string>
+    <string name="title_itin_list">Itins</string>
+    <string name="title_itin_detail">Itin Detail</string>
+    <string name="title_activity_search_form">SearchFormActivity</string>
+    <string name="title_activity_itinerary_interface">ItineraryInterface</string>
+    <string name="title_activity_admin_flight_csv">AdminFlightCSV</string>
+    <string name="title_activity_flight_csv">FlightCSV</string>
+    <string name="title_activity_admin_book">BOOK</string>
+    <string name="title_activity_admin_book__itin">AdminBook_Itin</string>
+    <string name="title_admineditinfo_list">AdminEditInfos</string>
+    <string name="title_admineditinfo_detail">AdminEditInfo Detail</string>
+    <string name="title_activity_edit_client">Edit Client</string>
+
+</resources>

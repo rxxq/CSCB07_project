@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.group_0471.flybook.SettingsActivity$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general" />
+    <header
+        android:fragment="com.group_0471.flybook.SettingsActivity$NotificationPreferenceFragment"
+        android:title="@string/pref_header_notifications" />
+    <header
+        android:fragment="com.group_0471.flybook.SettingsActivity$DataSyncPreferenceFragment"
+        android:title="@string/pref_header_data_sync" />
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.group_0471.flybook.SearchFormActivity$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general" />
+    <header
+        android:fragment="com.group_0471.flybook.SearchFormActivity$NotificationPreferenceFragment"
+        android:title="@string/pref_header_notifications" />
+    <header
+        android:fragment="com.group_0471.flybook.SearchFormActivity$DataSyncPreferenceFragment"
+        android:title="@string/pref_header_data_sync" />
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.group_0471.flybook.EditClientInfo_Client$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general" />
+    <header
+        android:fragment="com.group_0471.flybook.EditClientInfo_Client$NotificationPreferenceFragment"
+        android:title="@string/pref_header_notifications" />
+    <header
+        android:fragment="com.group_0471.flybook.EditClientInfo_Client$DataSyncPreferenceFragment"
+        android:title="@string/pref_header_data_sync" />
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.group_0471.flybook.Edit_Client_Info$GeneralPreferenceFragment"
+        android:title="@string/pref_header_general" />
+    <header
+        android:fragment="com.group_0471.flybook.Edit_Client_Info$NotificationPreferenceFragment"
+        android:title="@string/pref_header_notifications" />
+    <header
+        android:fragment="com.group_0471.flybook.Edit_Client_Info$DataSyncPreferenceFragment"
+        android:title="@string/pref_header_data_sync" />
+
+</preference-headers>

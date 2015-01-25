@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.group_0471.flybook.ClientMenu" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/logout"
+        android:src="@drawable/ic_logout"
+        android:orderInCategory="98"
+        yourapp:showAsAction="always|withText"
+        android:title="@string/logout"/>
+    <item
+        android:id="@+id/account_settings"
+        android:orderInCategory="99"
+        android:icon="@drawable/ic_acc_settings"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/acc_settings"/>
+
+    <item
+        android:id="@+id/shopping_cart"
+        android:orderInCategory="97"
+        yourapp:showAsAction="always|withText"
+        android:icon="@drawable/ic_cart"
+        android:title="@string/cart"/>
+
+</menu>

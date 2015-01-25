@@ -1,0 +1,24 @@
+Scenario: Client searches all itineraries from Toronto to Venice
+on November 3rd, 2014
+
+Assume user is already logged in and all flight data has been loaded
+into the FlightDatabase.
+
+0) System: receive search command
+    given Client, departure date, travel origin, destination
+1) Client: Search
+    given departure date, travel origin, destination
+2) SearchResult: create new SearchResult
+    given departure date, travel origin, destination
+3) SearchResult: find possible Itineraries using some algorithm
+    given FlightDatabase, departure date, travel origin, destination
+4) FlightDatabase: get flights by departure date, travel origin, destination
+    given departure date, travel origin, destination
+5) Itineraries: create new Itinerary
+    given list of flights
+6) SearchResult: add Itineraries
+    given Itineraries
+7) Client: add SearchResult
+    given SearchResult
+    
+

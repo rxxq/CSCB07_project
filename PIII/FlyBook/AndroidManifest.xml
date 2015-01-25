@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.group_0471.flybook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- Changed min from 8 to 16 -->
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:name=".ActivityVars"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterUser"
+            android:label="@string/title_activity_register_user"
+            android:parentActivityName="com.group_0371.flybook.MainActivity.java" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group_0371.flybook.MainActivity.java" />
+        </activity>
+        <activity
+            android:name=".ClientMenu"
+            android:label="@string/title_activity_client_menu"
+            android:parentActivityName="com.group_0371.MainActivity.java"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group_0371.MainActivity.java" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".AdminMenu"
+            android:icon="@drawable/ic_admin"
+            android:label="@string/title_activity_admin_menu" >
+        </activity>
+        <activity
+            android:name=".ViewItineraries"
+            android:label="@string/title_activity_view_itineraries" >
+        </activity>
+        <activity
+            android:name=".flightListActivity"
+            android:label="@string/title_flight_list" >
+        </activity>
+        <activity
+            android:name=".flightDetailActivity"
+            android:label="@string/title_flight_detail"
+            android:parentActivityName=".flightListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group_0471.flybook.flightListActivity" />
+        </activity>
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:label="@string/title_activity_shopping_cart" >
+        </activity>
+        <activity
+            android:name=".ClientInfoListActivity"
+            android:label="@string/title_clientinfo_list" >
+        </activity>
+        <activity
+            android:name=".ClientInfoDetailActivity"
+            android:label="@string/title_clientinfo_detail"
+            android:parentActivityName=".ClientInfoListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group_0471.flybook.ClientInfoListActivity" />
+        </activity>
+        <activity
+            android:name=".ItinListActivity"
+            android:label="@string/title_itin_list" >
+        </activity>
+        <activity
+            android:name=".ItinDetailActivity"
+            android:label="@string/title_itin_detail"
+            android:parentActivityName=".ItinListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group_0471.flybook.ItinListActivity" />
+        </activity>
+        <activity
+            android:name=".SearchFormActivity"
+            android:label="@string/title_activity_search_form" >
+        </activity>
+        <activity
+            android:name=".ItineraryInterface"
+            android:label="@string/title_activity_edit_client_info__client"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".CSVUploadActivity"
+            android:label="@string/title_activity_flight_csv" >
+        </activity>
+        <activity
+            android:name=".AdminBookActivity"
+            android:label="@string/title_activity_admin_book" >
+        </activity>
+        <activity
+            android:name=".AdminBook_Itin"
+            android:label="@string/title_activity_admin_book__itin" >
+        </activity>
+        <activity
+            android:name=".AdminEditInfoListActivity"
+            android:label="@string/title_admineditinfo_list" >
+        </activity>
+        <activity
+            android:name=".AdminEditInfoDetailActivity"
+            android:label="@string/title_admineditinfo_detail"
+            android:parentActivityName=".AdminEditInfoListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.group_0471.flybook.AdminEditInfoListActivity" />
+        </activity>
+        <activity
+            android:name=".EditClient"
+            android:label="@string/title_activity_edit_client" >
+        </activity>
+    </application>
+
+</manifest>

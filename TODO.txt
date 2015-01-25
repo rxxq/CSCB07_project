@@ -1,0 +1,19 @@
+(+ = required feature by PIII handout, * = optional)
+
+/** 2014-11-27 - {DANIEL}
+heres whats left imo, update with whatever else isn't done & cross out as we finish them! && update date each time
+
++ finish adminMenu  -> (almost done - Daniel)
++ implement Search Itineraries 
++ update Driver class for PIII
++ store Booked Information for client in DB 
++ implement admin being able to book itinerary for a client
++ implement admin being able to edit info for flights
++ make sure actionbar has set functionality in all Activities
++ finish edit personal info. for client
++ fill out README with instructions on how to use project in group_0371/README.txt
++ connect searchFlights & searchItineraries to DB (@rex need to know what to call from ControlPanel)
+
+*add more EditText errors for EditText fields, if have time make them nice as well
+
+*/

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+    <item name="activity_flight_list" type="layout">@layout/activity_flight_twopane</item>
+    <item name="activity_clientinfo_list" type="layout">@layout/activity_clientinfo_twopane</item>
+    <item name="activity_itin_list" type="layout">@layout/activity_itin_twopane</item>
+    <item name="activity_admineditinfo_list" type="layout">@layout/activity_admineditinfo_twopane</item>
+
+</resources>

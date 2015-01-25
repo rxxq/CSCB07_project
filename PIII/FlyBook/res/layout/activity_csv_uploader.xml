@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.group_0471.flybook.CSVUploadActivity" >
+
+    <EditText
+        android:id="@+id/csvPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:ems="10"
+        android:scrollHorizontally="true"
+        android:maxLines="1"
+        android:hint="@string/csvHint" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/csvPath"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/up_flight_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/csvPath"
+        android:layout_marginRight="22dp"
+        android:onClick="uploadFlightsCSV"
+        android:text="@string/up_flight" />
+
+    <Button
+        android:id="@+id/up_client_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/up_flight_button"
+        android:layout_alignBottom="@+id/up_flight_button"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_marginLeft="28dp"
+        android:onClick="uploadClientsCSV"
+        android:text="@string/up_client" />
+
+</RelativeLayout>
